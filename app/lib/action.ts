@@ -35,7 +35,6 @@ export async function createInvoice(formData: FormData) {
 }
 
 export async function updateInvoice(id: string, formData: FormData) {
-  console.dir(formData);
   const { amount, customerId, status } = UpdateInvoice.parse({
     customerId: formData.get('customerId'),
     amount: formData.get('amount'),
